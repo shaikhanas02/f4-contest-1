@@ -10,7 +10,7 @@ function App() {
 const [message, setMessage] = useState() ;
 function handleClick(e){
   e.preventDefault() ;
-  if(fullName && email && password && confirmPassword && (password=== confirmPassword)){
+  if(fullName && email && password && confirmPassword && (password=== confirmPassword) && email.includes("@")){
     setMessage("Successfully Signed Up!")
   }
   else{
